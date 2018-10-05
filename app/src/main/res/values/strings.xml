@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ThirteenValues</string>
+    <string name="init_msg">Hello World</string>
+</resources>
