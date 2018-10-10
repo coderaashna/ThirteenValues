@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="10dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorTxtvwBg">
 
     <ImageView
         android:id="@+id/image"
@@ -15,13 +16,14 @@
         android:src="@drawable/franklin" />
 
     <TextView
+        android:id="@+id/msg"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_gravity="center"
+        android:layout_weight="1"
         android:gravity="center"
-        android:id="@+id/msg"
-        android:text="@string/init_msg" />
+        android:textColor="@color/colorTxtvwTxt"
+        android:textSize="36sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,21 +34,21 @@
             android:id="@+id/prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Button"
+            android:layout_weight="1"
+            android:background="@color/colorBtnBg"
             android:onClick="buttonClickedPrev"
-            android:text="Prev"
-            android:textColor="@color/text"
-            android:layout_weight="1"/>
+            android:text="Previous"
+            android:textColor="@color/colorBtnTxt"/>
 
         <Button
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Button"
+            android:layout_weight="1"
+            android:background="@color/colorBtnBg"
             android:onClick="buttonClickedNext"
             android:text="Next"
-            android:textColor="@color/text"
-            android:layout_weight="1"/>
+            android:textColor="@color/colorBtnTxt"/>
     </LinearLayout>
 
 
